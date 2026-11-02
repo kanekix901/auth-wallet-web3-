@@ -1,0 +1,158 @@
+/* Dark Cyberpunk Theme Settings */
+@import url('https://googleapis.com');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #0a0f1d;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cyber-container {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+}
+
+/* Header UI */
+.cyber-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 2px solid #1a243d;
+    margin-bottom: 40px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #00ffff;
+}
+
+/* Button & Neon Effects */
+.cyber-btn {
+    background: transparent;
+    border: 2px solid;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.cyber-btn:disabled {
+    border-color: #444 !important;
+    color: #666;
+    cursor: not-allowed;
+    box-shadow: none !important;
+}
+
+.neon-blue { border-color: #00ffff; box-shadow: 0 0 10px #00ffff; }
+.neon-blue:hover:not(:disabled) { background: #00ffff; color: #000; box-shadow: 0 0 20px #00ffff; }
+
+.neon-green { border-color: #00ff66; box-shadow: 0 0 10px #00ff66; }
+.neon-green:hover:not(:disabled) { background: #00ff66; color: #000; box-shadow: 0 0 20px #00ff66; }
+
+.neon-purple { border-color: #9d4edd; box-shadow: 0 0 10px #9d4edd; }
+.neon-purple:hover:not(:disabled) { background: #9d4edd; color: #000; box-shadow: 0 0 20px #9d4edd; }
+
+/* Main Cards layout */
+.welcome-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.welcome-section h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #f1f5f9;
+}
+
+.welcome-section p {
+    color: #94a3b8;
+    margin-bottom: 15px;
+}
+
+.wallet-status {
+    font-weight: bold;
+    color: #ff3366;
+    background: #1e1b29;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #342a45;
+}
+
+.dashboard-section {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+
+@media (max-width: 600px) {
+    .dashboard-section {
+        flex-direction: column;
+    }
+}
+
+.card {
+    background: #111827;
+    border: 1px solid #1f2937;
+    padding: 25px;
+    border-radius: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #f3f4f6;
+}
+
+.card p {
+    color: #9ca3af;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.result-box {
+    margin-top: 10px;
+    background: #030712;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px dashed #374151;
+    font-size: 14px;
+    display: none;
+}
+
+/* Footer UI */
+.cyber-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #4b5563;
+    font-size: 12px;
+    border-top: 1px solid #1f2937;
+}
+
+
